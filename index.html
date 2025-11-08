@@ -1,0 +1,1848 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== REMIXICON ===============-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"">
+
+    <!--=============== NICE SELECT CSS ===============-->
+    <link rel="stylesheet" href="assets/css/nice-select2.css" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Responsive Ecommerce Website</title>
+  </head>
+  <body>
+    <!--=============== HEADER ===============-->
+    <header class="header">
+      
+      <!-- Topbar -->
+      <div class="topbar">
+        <div class="topbar-container container">
+          <ul class="topbar-list">
+            <li class="topbar-item">
+              <a href="returns.html" class="topbar-link">Returns Policy</a>
+            </li>
+
+            <li class="topbar-item">
+              <a href="#newsletter" class="topbar-link">Newsletter</a>
+            </li>
+
+            <li class="topbar-item">
+              <a href="contact.html" class="topbar-link">Contact</a>
+            </li>
+          </ul>
+
+          <div class="topbar-socials">
+            <a href="https://www.facebook.com/" class="topbar-socials-link">
+              <i class="ri-facebook-circle-fill"></i>
+            </a>
+
+            <a href="https://twitter.com/" class="topbar-socials-link">
+              <i class="ri-twitter-fill"></i>
+            </a>
+
+            <a href="https://www.instagram.com/" class="topbar-socials-link">
+              <i class="ri-instagram-line"></i>
+            </a>
+
+            <a href="https://www.youtube.com/" class="topbar-socials-link">
+              <i class="ri-youtube-fill"></i>
+            </a>
+          </div>
+
+          <div class="topbar-shipping">
+            <img src="assets/img/truck.svg" alt="" class="topbar-icon" />
+            <p class="topbar-text">FREE SHIPPING FOR ALL ORDERS OF $150</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom-bar container">
+        <a href="index.html">
+          <img src="assets/img/logo.png" alt="" class="navbar-logo" />
+        </a>
+
+        <form action="" class="navbar-form">
+          <select
+            name=""
+            class="navbar-select"
+            style="display: none"
+            id="navbar-select"
+          >
+            <option value="all" selected>All Categories</option>
+            <option value="fas">Fashion</option>
+            <option value="ele">Electronics</option>
+            <option value="jew">Jewelry</option>
+            <option value="gro">Grocery</option>
+          </select>
+
+          <input type="text" class="navbar-input" placeholder="Search..." />
+
+          <button type="submit" class="navbar-search">
+            <i class="ri-search-line"></i>
+          </button>
+        </form>
+
+        <div class="navbar-btns">
+          <a href="account.html" class="navbar-btn"
+            ><i class="ri-user-line"></i
+          ></a>
+
+          <a href="#" class="navbar-btn">
+            <i class="ri-heart-line"></i>
+          </a>
+
+          <a href="#" class="navbar-btn">
+            <i class="ri-shopping-cart-line"></i>
+          </a>
+        </div>
+      </div>
+      <!-- navbar -->
+      <nav class="navbar container">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a href="index.html" class="navbar-link">HOME</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="shop.html" class="navbar-link">SHOP</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="account.html" class="navbar-link">MY ACCOUNT</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="contact.html" class="navbar-link">CONTACT</a>
+          </li>
+        </ul>
+
+        <div class="navbar-contact">
+          <img src="assets/img/call.svg" alt="" class="navbar-icon" />
+          <a href="tel:+98-911-316-9936 " class="navbar-call-link"
+            >+98-911-316-9936</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+      <!--=============== HOME ===============-->
+
+      <section class="home">
+        <div class="swiper home-swiper">
+          <div class="swiper-wrapper">
+            <!-- slide 1 -->
+            <div
+              class="swiper-slide"
+              style="background-image: url(./assets/img/home-img-1.jpg)"
+            >
+              <div class="container">
+                <div class="home-tag">
+                  <img src="assets/img/bolt.svg" alt="" class="home-img" /> Top
+                  Trending
+                </div>
+
+                <h1 class="home-title">Classic Elegant Style Women</h1>
+
+                <p class="home-description">
+                  Discover timeless elegance and modern sophistication with our
+                  curated collection of women's fashion.
+                </p>
+
+                <a href="shop.html" class="btn">Shop Now</a>
+              </div>
+            </div>
+
+            <!-- slide 2 -->
+            <div
+              class="swiper-slide"
+              style="background-image: url(./assets/img/home-img-2.jpg)"
+            >
+              <div class="container">
+                <div class="home-tag">
+                  <img src="assets/img/bolt.svg" alt="" class="home-img" /> Top
+                  Trending
+                </div>
+
+                <h1 class="home-title" style="color: var(--white-color)">
+                  Classic Elegant Style Women
+                </h1>
+
+                <p class="home-description" style="color: var(--gray-color)">
+                  Discover timeless elegance and modern sophistication with our
+                  curated collection of women's fashion.
+                </p>
+
+                <a href="shop.html" class="btn">Shop Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!--=============== PRODUCTS ===============-->
+      <section class="homem-products container section">
+        <h2
+          class="section-title title-center"
+          data-title="Check out product of the day"
+        >
+          Elevate your lifestyle
+        </h2>
+
+        <div class="swiper product-swiper">
+          <div class="swiper-wrapper">
+            <article class="swiper-slide product-card">
+              <div class="product-header">
+                <img
+                  src="assets/img/product-1.jpg"
+                  alt=""
+                  class="product-img"
+                />
+
+                <div class="product-content">
+                  <div class="product-top">
+                    <ul class="product-stars">
+                      <li><i class="ri-star-fill"></i></li>
+                      <li><i class="ri-star-fill"></i></li>
+                      <li><i class="ri-star-fill"></i></li>
+                      <li><i class="ri-star-fill"></i></li>
+                      <li><i class="ri-star-fill"></i></li>
+                      <li><i class="ri-star-fill"></i></li>
+
+                      <li class="product-rating">4.9</li>
+                    </ul>
+
+                    <div class="product-colors">
+                      <div>
+                        <input
+                          type="radio"
+                          name="color"
+                          class="product-color-input"
+                        />
+                        <span
+                          class="product-color"
+                          style="--background-color: hsl(0, 60%, 64%)"
+                        ></span>
+                      </div>
+
+                      <div>
+                        <input
+                          type="radio"
+                          name="color"
+                          class="product-color-input"
+                        />
+                        <span
+                          class="product-color"
+                          style="--background-color: hsl(0, 0%, 100%)"
+                        ></span>
+                      </div>
+
+                      <div>
+                        <input
+                          type="radio"
+                          name="color"
+                          class="product-color-input"
+                        />
+                        <span
+                          class="product-color"
+                          style="--background-color: hsl(159, 46%, 56%)"
+                        ></span>
+                      </div>
+
+                      <div>
+                        <input
+                          type="radio"
+                          name="color"
+                          class="product-color-input"
+                        />
+                        <span
+                          class="product-color"
+                          style="--background-color: hsl(223, 60%, 66%)"
+                        ></span>
+                      </div>
+
+                      <div>
+                        <input
+                          type="radio"
+                          name="color"
+                          class="product-color-input"
+                        />
+                        <span
+                          class="product-color"
+                          style="--background-color: hsl(0, 100%, 68%)"
+                        ></span>
+                      </div>
+
+                      <div>
+                        <input
+                          type="radio"
+                          name="color"
+                          class="product-color-input"
+                        />
+                        <span
+                          class="product-color"
+                          style="--background-color: hsl(112, 81%, 67%)"
+                        ></span>
+                      </div>
+
+                      <div>
+                        <input
+                          type="radio"
+                          name="color"
+                          class="product-color-input"
+                        />
+                        <span
+                          class="product-color"
+                          style="--background-color: hsl(112, 81%, 67%)"
+                        ></span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="product-size">
+                    <div>
+                      <input
+                        type="radio"
+                        name="size"
+                        class="product-size-input"
+                        id="x-smal"
+                        checked
+                      />
+                      <label for="x-smal" class="product-size-lable">xs</label>
+                    </div>
+
+                    <div>
+                      <input
+                        type="radio"
+                        name="size"
+                        class="product-size-input"
+                        id="smal"
+                      />
+                      <label for="smal" class="product-size-lable">s</label>
+                    </div>
+                    <div>
+                      <input
+                        type="radio"
+                        name="size"
+                        class="product-size-input"
+                        id="medium"
+                      />
+                      <label for="medium" class="product-size-lable">m</label>
+                    </div>
+
+                    <div>
+                      <input
+                        type="radio"
+                        name="size"
+                        class="product-size-input"
+                        id="larg"
+                      />
+                      <label for="larg" class="product-size-lable">l</label>
+                    </div>
+
+                    <div>
+                      <input
+                        type="radio"
+                        name="size"
+                        class="product-size-input"
+                        id="x-larg"
+                      />
+                      <label for="x-larg" class="product-size-lable">xl</label>
+                    </div>
+                  </div>
+
+                  <a href="details.html" class="btn product-btn">Add to Card</a>
+                </div>
+              </div>
+
+              <div class="produced-bottom">
+                <div>
+                  <h3 class="product-title">
+                    <a href="details.html">VelvetBloom Midi Dress</a>
+                  </h3>
+
+                  <span class="product-price">$145.00 </span>
+                </div>
+
+                <a href="#" class="product-wishlist">
+                  <i class="ri-poker-hearts-line"></i>
+                </a>
+              </div>
+
+              <div class="product-tag sale">Sale</div>
+            </article>
+
+            <article class="swiper-slide product-card">
+              <div class="product-header">
+                <img
+                  src="assets/img/product-2.jpg"
+                  alt=""
+                  class="product-img"
+                />
+
+                <div class="product-content">
+                  <div class="product-top">
+                    <ul class="product-stars">
+                      <li><i class="ri-star-fill"></i></li>
+                      <li><i class="ri-star-fill"></i></li>
+                      <li><i class="ri-star-fill"></i></li>
+                      <li><i class="ri-star-fill"></i></li>
+                      <li><i class="ri-star-fill"></i></li>
+                      <li><i class="ri-star-fill"></i></li>
+
+                      <li class="product-rating">4.9</li>
+                    </ul>
+
+                    <div class="product-colors">
+                      <div>
+                        <input
+                          type="radio"
+                          name="color"
+                          class="product-color-input"
+                        />
+                        <span
+                          class="product-color"
+                          style="--background-color: hsl(0, 60%, 64%)"
+                        ></span>
+                      </div>
+
+                      <div>
+                        <input
+                          type="radio"
+                          name="color"
+                          class="product-color-input"
+                        />
+                        <span
+                          class="product-color"
+                          style="--background-color: hsl(0, 0%, 100%)"
+                        ></span>
+                      </div>
+
+                      <div>
+                        <input
+                          type="radio"
+                          name="color"
+                          class="product-color-input"
+                        />
+                        <span
+                          class="product-color"
+                          style="--background-color: hsl(159, 46%, 56%)"
+                        ></span>
+                      </div>
+
+                      <div>
+                        <input
+                          type="radio"
+                          name="color"
+                          class="product-color-input"
+                        />
+                        <span
+                          class="product-color"
+                          style="--background-color: hsl(223, 60%, 66%)"
+                        ></span>
+                      </div>
+
+                      <div>
+                        <input
+                          type="radio"
+                          name="color"
+                          class="product-color-input"
+                        />
+                        <span
+                          class="product-color"
+                          style="--background-color: hsl(0, 100%, 68%)"
+                        ></span>
+                      </div>
+
+                      <div>
+                        <input
+                          type="radio"
+                          name="color"
+                          class="product-color-input"
+                        />
+                        <span
+                          class="product-color"
+                          style="--background-color: hsl(112, 81%, 67%)"
+                        ></span>
+                      </div>
+
+                      <div>
+                        <input
+                          type="radio"
+                          name="color"
+                          class="product-color-input"
+                        />
+                        <span
+                          class="product-color"
+                          style="--background-color: hsl(112, 81%, 67%)"
+                        ></span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="product-size">
+                    <div>
+                      <input
+                        type="radio"
+                        name="size"
+                        class="product-size-input"
+                        id="x-smal"
+                        checked
+                      />
+                      <label for="x-smal" class="product-size-lable">xs</label>
+                    </div>
+
+                    <div>
+                      <input
+                        type="radio"
+                        name="size"
+                        class="product-size-input"
+                        id="smal"
+                      />
+                      <label for="smal" class="product-size-lable">s</label>
+                    </div>
+                    <div>
+                      <input
+                        type="radio"
+                        name="size"
+                        class="product-size-input"
+                        id="medium"
+                      />
+                      <label for="medium" class="product-size-lable">m</label>
+                    </div>
+
+                    <div>
+                      <input
+                        type="radio"
+                        name="size"
+                        class="product-size-input"
+                        id="larg"
+                      />
+                      <label for="larg" class="product-size-lable">l</label>
+                    </div>
+
+                    <div>
+                      <input
+                        type="radio"
+                        name="size"
+                        class="product-size-input"
+                        id="x-larg"
+                      />
+                      <label for="x-larg" class="product-size-lable">xl</label>
+                    </div>
+                  </div>
+
+                  <a href="details.html" class="btn product-btn">Add to Card</a>
+                </div>
+              </div>
+
+              <div class="produced-bottom">
+                <div>
+                  <h3 class="product-title">
+                    <a href="details.html">Short Denim jacket</a>
+                  </h3>
+
+                  <span class="product-price">$145.00 </span>
+                </div>
+
+                <a href="#" class="product-wishlist">
+                  <i class="ri-poker-hearts-line"></i>
+                </a>
+              </div>
+
+              <div class="product-tag new">New</div>
+            </article>
+
+            <article class="swiper-slide product-card">
+              <div class="product-header">
+                <img
+                  src="assets/img/product-3.png"
+                  alt=""
+                  class="product-img"
+                />
+
+                <div class="product-content">
+                  <div class="product-top">
+                    <ul class="product-stars">
+                      <li><i class="ri-star-fill"></i></li>
+                      <li><i class="ri-star-fill"></i></li>
+                      <li><i class="ri-star-fill"></i></li>
+                      <li><i class="ri-star-fill"></i></li>
+                      <li><i class="ri-star-fill"></i></li>
+                      <li><i class="ri-star-fill"></i></li>
+
+                      <li class="product-rating">4.9</li>
+                    </ul>
+
+                    <div class="product-colors">
+                      <div>
+                        <input
+                          type="radio"
+                          name="color"
+                          class="product-color-input"
+                        />
+                        <span
+                          class="product-color"
+                          style="--background-color: hsl(0, 60%, 64%)"
+                        ></span>
+                      </div>
+
+                      <div>
+                        <input
+                          type="radio"
+                          name="color"
+                          class="product-color-input"
+                        />
+                        <span
+                          class="product-color"
+                          style="--background-color: hsl(0, 0%, 100%)"
+                        ></span>
+                      </div>
+
+                      <div>
+                        <input
+                          type="radio"
+                          name="color"
+                          class="product-color-input"
+                        />
+                        <span
+                          class="product-color"
+                          style="--background-color: hsl(159, 46%, 56%)"
+                        ></span>
+                      </div>
+
+                      <div>
+                        <input
+                          type="radio"
+                          name="color"
+                          class="product-color-input"
+                        />
+                        <span
+                          class="product-color"
+                          style="--background-color: hsl(223, 60%, 66%)"
+                        ></span>
+                      </div>
+
+                      <div>
+                        <input
+                          type="radio"
+                          name="color"
+                          class="product-color-input"
+                        />
+                        <span
+                          class="product-color"
+                          style="--background-color: hsl(0, 100%, 68%)"
+                        ></span>
+                      </div>
+
+                      <div>
+                        <input
+                          type="radio"
+                          name="color"
+                          class="product-color-input"
+                        />
+                        <span
+                          class="product-color"
+                          style="--background-color: hsl(112, 81%, 67%)"
+                        ></span>
+                      </div>
+
+                      <div>
+                        <input
+                          type="radio"
+                          name="color"
+                          class="product-color-input"
+                        />
+                        <span
+                          class="product-color"
+                          style="--background-color: hsl(112, 81%, 67%)"
+                        ></span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="product-size">
+                    <div>
+                      <input
+                        type="radio"
+                        name="size"
+                        class="product-size-input"
+                        id="x-smal"
+                        checked
+                      />
+                      <label for="x-smal" class="product-size-lable">xs</label>
+                    </div>
+
+                    <div>
+                      <input
+                        type="radio"
+                        name="size"
+                        class="product-size-input"
+                        id="smal"
+                      />
+                      <label for="smal" class="product-size-lable">s</label>
+                    </div>
+                    <div>
+                      <input
+                        type="radio"
+                        name="size"
+                        class="product-size-input"
+                        id="medium"
+                      />
+                      <label for="medium" class="product-size-lable">m</label>
+                    </div>
+
+                    <div>
+                      <input
+                        type="radio"
+                        name="size"
+                        class="product-size-input"
+                        id="larg"
+                      />
+                      <label for="larg" class="product-size-lable">l</label>
+                    </div>
+
+                    <div>
+                      <input
+                        type="radio"
+                        name="size"
+                        class="product-size-input"
+                        id="x-larg"
+                      />
+                      <label for="x-larg" class="product-size-lable">xl</label>
+                    </div>
+                  </div>
+
+                  <a href="details.html" class="btn product-btn">Add to Card</a>
+                </div>
+              </div>
+
+              <div class="produced-bottom">
+                <div>
+                  <h3 class="product-title">
+                    <a href="details.html">CloudFit Joggeres</a>
+                  </h3>
+
+                  <span class="product-price">$125.00 </span>
+                </div>
+
+                <a href="#" class="product-wishlist">
+                  <i class="ri-poker-hearts-line"></i>
+                </a>
+              </div>
+
+              <div class="product-tag sale">Hot</div>
+            </article>
+
+            <article class="swiper-slide product-card">
+              <div class="product-header">
+                <img
+                  src="assets/img/product-4.jpg"
+                  alt=""
+                  class="product-img"
+                />
+
+                <div class="product-content">
+                  <div class="product-top">
+                    <ul class="product-stars">
+                      <li><i class="ri-star-fill"></i></li>
+                      <li><i class="ri-star-fill"></i></li>
+                      <li><i class="ri-star-fill"></i></li>
+                      <li><i class="ri-star-fill"></i></li>
+                      <li><i class="ri-star-fill"></i></li>
+                      <li><i class="ri-star-fill"></i></li>
+
+                      <li class="product-rating">4.9</li>
+                    </ul>
+
+                    <div class="product-colors">
+                      <div>
+                        <input
+                          type="radio"
+                          name="color"
+                          class="product-color-input"
+                        />
+                        <span
+                          class="product-color"
+                          style="--background-color: hsl(0, 60%, 64%)"
+                        ></span>
+                      </div>
+
+                      <div>
+                        <input
+                          type="radio"
+                          name="color"
+                          class="product-color-input"
+                        />
+                        <span
+                          class="product-color"
+                          style="--background-color: hsl(0, 0%, 100%)"
+                        ></span>
+                      </div>
+
+                      <div>
+                        <input
+                          type="radio"
+                          name="color"
+                          class="product-color-input"
+                        />
+                        <span
+                          class="product-color"
+                          style="--background-color: hsl(159, 46%, 56%)"
+                        ></span>
+                      </div>
+
+                      <div>
+                        <input
+                          type="radio"
+                          name="color"
+                          class="product-color-input"
+                        />
+                        <span
+                          class="product-color"
+                          style="--background-color: hsl(223, 60%, 66%)"
+                        ></span>
+                      </div>
+
+                      <div>
+                        <input
+                          type="radio"
+                          name="color"
+                          class="product-color-input"
+                        />
+                        <span
+                          class="product-color"
+                          style="--background-color: hsl(0, 100%, 68%)"
+                        ></span>
+                      </div>
+
+                      <div>
+                        <input
+                          type="radio"
+                          name="color"
+                          class="product-color-input"
+                        />
+                        <span
+                          class="product-color"
+                          style="--background-color: hsl(112, 81%, 67%)"
+                        ></span>
+                      </div>
+
+                      <div>
+                        <input
+                          type="radio"
+                          name="color"
+                          class="product-color-input"
+                        />
+                        <span
+                          class="product-color"
+                          style="--background-color: hsl(112, 81%, 67%)"
+                        ></span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="product-size">
+                    <div>
+                      <input
+                        type="radio"
+                        name="size"
+                        class="product-size-input"
+                        id="x-smal"
+                        checked
+                      />
+                      <label for="x-smal" class="product-size-lable">xs</label>
+                    </div>
+
+                    <div>
+                      <input
+                        type="radio"
+                        name="size"
+                        class="product-size-input"
+                        id="smal"
+                      />
+                      <label for="smal" class="product-size-lable">s</label>
+                    </div>
+                    <div>
+                      <input
+                        type="radio"
+                        name="size"
+                        class="product-size-input"
+                        id="medium"
+                      />
+                      <label for="medium" class="product-size-lable">m</label>
+                    </div>
+
+                    <div>
+                      <input
+                        type="radio"
+                        name="size"
+                        class="product-size-input"
+                        id="larg"
+                      />
+                      <label for="larg" class="product-size-lable">l</label>
+                    </div>
+
+                    <div>
+                      <input
+                        type="radio"
+                        name="size"
+                        class="product-size-input"
+                        id="x-larg"
+                      />
+                      <label for="x-larg" class="product-size-lable">xl</label>
+                    </div>
+                  </div>
+
+                  <a href="details.html" class="btn product-btn">Add to Card</a>
+                </div>
+              </div>
+
+              <div class="produced-bottom">
+                <div>
+                  <h3 class="product-title">
+                    <a href="details.html">CloudFit Joggeres</a>
+                  </h3>
+
+                  <span class="product-price">$125.00 </span>
+                </div>
+
+                <a href="#" class="product-wishlist">
+                  <i class="ri-poker-hearts-line"></i>
+                </a>
+              </div>
+
+              <div class="product-tag sale">Sale</div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!--=============== CATEGORIES ===============-->
+      <section class="categories container">
+        <div class="categories-header">
+          <h2
+            class="section-title"
+            data-title="Explore our diverse range of categories"
+          >
+            Browse by Categories
+          </h2>
+
+          <a href="shop.html" class="btn categories-view"
+            >View all Categories</a
+          >
+        </div>
+
+        <div class="categories-container">
+          <div class="categories-item hero">
+            <img
+              src="assets/img/categories-img-1.jpg"
+              alt=""
+              class="categories-img"
+            />
+            <div class="categories-data">
+              <h3 class="categories-title">ALL PRODUCTS</h3>
+              <p class="categories-description">
+                Discover endless possibilities with our All Products
+              </p>
+
+              <div class="categories-list mt-auto">
+                <a href="shop.html" class="categories-link"
+                  >New Arrivals <i class="ri-arrow-right-line"></i
+                ></a>
+                <a href="shop.html" class="categories-link"
+                  >Trending Items <i class="ri-arrow-right-line"></i
+                ></a>
+                <a href="shop.html" class="categories-link"
+                  >Brand Collection <i class="ri-arrow-right-line"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="categories-item top-right">
+            <img
+              src="assets/img/categories-img-2.jpg"
+              alt=""
+              class="categories-img"
+            />
+            <div class="categories-data">
+              <h3 class="categories-title">WOMEN SHIRTS</h3>
+              <p class="categories-description">
+                Discover endless possibilities with our All Products
+              </p>
+              <a href="shop.html" class="categories-icon mt-auto"
+                ><i class="ri-arrow-right-line"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="right-bottom">
+            <div class="categories-item small">
+              <img
+                src="assets/img/categories-img-3.jpg"
+                alt=""
+                class="categories-img"
+              />
+              <div class="categories-data">
+                <a href="shop.html" class="categories-btn">Woman Pants</a>
+              </div>
+            </div>
+
+            <div class="categories-item small">
+              <img
+                src="assets/img/categories-img-4.jpg"
+                alt=""
+                class="categories-img"
+              />
+              <div class="categories-data">
+                <a href="shop.html" class="categories-btn">Accessor</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--=============== FEATURES ===============-->
+      <section class="features section container grid">
+        <!-- item 1 -->
+        <article class="features-item">
+          <img
+            src="assets/img/features-img-1.svg"
+            alt=""
+            class="features-img"
+          />
+
+          <div class="features-data">
+            <h3 class="features-title">Certified</h3>
+
+            <p>Available certaificates of authenticity</p>
+          </div>
+        </article>
+
+        <!-- item 2 -->
+        <article class="features-item">
+          <img
+            src="assets/img/features-img-2.svg"
+            alt=""
+            class="features-img"
+          />
+
+          <div class="features-data">
+            <h3 class="features-title">Secure payment</h3>
+
+            <p>Certified marketplace since 1994</p>
+          </div>
+        </article>
+
+        <!-- item 3 -->
+        <article class="features-item">
+          <img
+            src="assets/img/features-img-3.svg"
+            alt=""
+            class="features-img"
+          />
+
+          <div class="features-data">
+            <h3 class="features-title">Quick Shipping</h3>
+
+            <p>Free, Fast and reliable worldwide.</p>
+          </div>
+        </article>
+
+        <!-- item 4 -->
+        <article class="features-item">
+          <img
+            src="assets/img/features-img-4.svg"
+            alt=""
+            class="features-img"
+          />
+
+          <div class="features-data">
+            <h3 class="features-title">Transparent</h3>
+
+            <p>Hassle-free return policy</p>
+          </div>
+        </article>
+      </section>
+
+      <!--=============== PRODUCTS ===============-->
+      <section class="product-elevate grid">
+        <div class="swiper product-elevate-swiper">
+          <div class="swiper-wrapper">
+            <!-- slide 1 -->
+            <div class="swiper-slide">
+              <img src="assets/img/img-slider-1.jpg" alt="" />
+            </div>
+
+            <!-- slide 2 -->
+            <div class="swiper-slide">
+              <img src="assets/img/img-slider-2.jpg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div>
+          <h2 class="section-title" data-title="Explore our Collection">
+            Denis Outfits
+          </h2>
+
+          <div class="product-elevate-container">
+            <!-- number 1 -->
+            <article class="product-card">
+              <div class="product-top">
+                <img
+                  src="assets/img/product-10.png"
+                  alt=""
+                  class="product-img"
+                />
+
+                <div class="product-style">
+                  <div>
+                    <h3 class="product-color-title">Color:</h3>
+
+                    <div class="product-colors">
+                      <img
+                        src="assets/img/black-jacket.jpg"
+                        alt=""
+                        class="product-color-img"
+                      />
+
+                      <img
+                        src="assets/img/jacket-blue.jpg"
+                        alt=""
+                        class="product-color-img"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="product-size mt-auto">
+                    <div>
+                      <input
+                        type="radio"
+                        name="size"
+                        class="product-size-input"
+                        id="x-smal"
+                        checked
+                      />
+                      <label for="x-smal" class="product-size-lable">xs</label>
+                    </div>
+
+                    <div>
+                      <input
+                        type="radio"
+                        name="size"
+                        class="product-size-input"
+                        id="smal"
+                      />
+                      <label for="smal" class="product-size-lable">s</label>
+                    </div>
+                    <div>
+                      <input
+                        type="radio"
+                        name="size"
+                        class="product-size-input"
+                        id="medium"
+                      />
+                      <label for="medium" class="product-size-lable">m</label>
+                    </div>
+
+                    <div>
+                      <input
+                        type="radio"
+                        name="size"
+                        class="product-size-input"
+                        id="larg"
+                      />
+                      <label for="larg" class="product-size-lable">l</label>
+                    </div>
+
+                    <div>
+                      <input
+                        type="radio"
+                        name="size"
+                        class="product-size-input"
+                        id="x-larg"
+                      />
+                      <label for="x-larg" class="product-size-lable">xl</label>
+                    </div>
+                  </div>
+
+                  <a href="details.html" class="btn product-btn">Add to Card</a>
+
+                  <span class="product-sold-last"
+                    ><i class="ri-fire-fill"></i>Sold in last 12 hours</span
+                  >
+                </div>
+              </div>
+
+              <div class="product-bottom">
+                <div>
+                  <h3 class="product-title">
+                    <a href="details.html">CloudFit Joggers</a>
+                  </h3>
+
+                  <span class="product-price">$125.00</span>
+                </div>
+
+                <a href="#" class="product-whishlist">
+                  <i class="ri-heart-line"></i>
+                </a>
+              </div>
+            </article>
+
+            <!-- number 2 -->
+            <article class="product-card">
+              <div class="product-top">
+                <img
+                  src="assets/img/product-11.png"
+                  alt=""
+                  class="product-img"
+                />
+
+                <div class="product-style">
+                  <div>
+                    <h3 class="product-color-title">Color:</h3>
+
+                    <div class="product-colors">
+                      <img
+                        src="assets/img/black-jacket.jpg"
+                        alt=""
+                        class="product-color-img"
+                      />
+
+                      <img
+                        src="assets/img/jacket-blue.jpg"
+                        alt=""
+                        class="product-color-img"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="product-size mt-auto">
+                    <div>
+                      <input
+                        type="radio"
+                        name="size"
+                        class="product-size-input"
+                        id="x-smal"
+                        checked
+                      />
+                      <label for="x-smal" class="product-size-lable">xs</label>
+                    </div>
+
+                    <div>
+                      <input
+                        type="radio"
+                        name="size"
+                        class="product-size-input"
+                        id="smal"
+                      />
+                      <label for="smal" class="product-size-lable">s</label>
+                    </div>
+                    <div>
+                      <input
+                        type="radio"
+                        name="size"
+                        class="product-size-input"
+                        id="medium"
+                      />
+                      <label for="medium" class="product-size-lable">m</label>
+                    </div>
+
+                    <div>
+                      <input
+                        type="radio"
+                        name="size"
+                        class="product-size-input"
+                        id="larg"
+                      />
+                      <label for="larg" class="product-size-lable">l</label>
+                    </div>
+
+                    <div>
+                      <input
+                        type="radio"
+                        name="size"
+                        class="product-size-input"
+                        id="x-larg"
+                      />
+                      <label for="x-larg" class="product-size-lable">xl</label>
+                    </div>
+                  </div>
+
+                  <a href="details.html" class="btn product-btn">Add to Card</a>
+
+                  <span class="product-sold-last"
+                    ><i class="ri-fire-fill"></i>Sold in last 12 hours</span
+                  >
+                </div>
+
+                <span class="product-tag">SAVE 70%</span>
+              </div>
+
+              <div class="product-bottom">
+                <div>
+                  <h3 class="product-title">
+                    <a href="details.html">CloudFit Joggers</a>
+                  </h3>
+
+                  <span class="product-price">$125.00</span>
+                </div>
+
+                <a href="#" class="product-whishlist">
+                  <i class="ri-heart-line"></i>
+                </a>
+              </div>
+            </article>
+
+            <!-- number 3 -->
+            <article class="product-card">
+              <div class="product-top">
+                <img
+                  src="assets/img/product-12.png"
+                  alt=""
+                  class="product-img"
+                />
+
+                <div class="product-style">
+                  <div>
+                    <h3 class="product-color-title">Color</h3>
+
+                    <div class="product-colors">
+                      <img
+                        src="assets/img/black-jacket.jpg"
+                        alt=""
+                        class="product-color-img"
+                      />
+
+                      <img
+                        src="assets/img/jacket-blue.jpg"
+                        alt=""
+                        class="product-color-img"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="product-size mt-auto">
+                    <div>
+                      <input
+                        type="radio"
+                        name="size"
+                        class="product-size-input"
+                        id="x-smal"
+                        checked
+                      />
+                      <label for="x-smal" class="product-size-lable">xs</label>
+                    </div>
+
+                    <div>
+                      <input
+                        type="radio"
+                        name="size"
+                        class="product-size-input"
+                        id="smal"
+                      />
+                      <label for="smal" class="product-size-lable">s</label>
+                    </div>
+                    <div>
+                      <input
+                        type="radio"
+                        name="size"
+                        class="product-size-input"
+                        id="medium"
+                      />
+                      <label for="medium" class="product-size-lable">m</label>
+                    </div>
+
+                    <div>
+                      <input
+                        type="radio"
+                        name="size"
+                        class="product-size-input"
+                        id="larg"
+                      />
+                      <label for="larg" class="product-size-lable">l</label>
+                    </div>
+
+                    <div>
+                      <input
+                        type="radio"
+                        name="size"
+                        class="product-size-input"
+                        id="x-larg"
+                      />
+                      <label for="x-larg" class="product-size-lable">xl</label>
+                    </div>
+                  </div>
+
+                  <a href="details.html" class="btn product-btn">Add to Card</a>
+
+                  <span class="product-sold-last"
+                    ><i class="ri-fire-fill"></i>Sold in last 12 hours</span
+                  >
+                </div>
+
+                <span class="product-tag">SAVE 70%</span>
+              </div>
+
+              <div class="product-bottom">
+                <div>
+                  <h3 class="product-title">
+                    <a href="details.html">CloudFit Joggers</a>
+                  </h3>
+
+                  <span class="product-price">$125.00</span>
+                </div>
+
+                <a href="#" class="product-whishlist">
+                  <i class="ri-heart-line"></i>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!--=============== CATEGORY ===============-->
+      <section class="category container grid section">
+        <div class="category-group">
+          <h2 class="section-title" data-title="SHOP BY CATEGORY">
+            There's more to explore
+          </h2>
+
+          <ul class="category-tabs">
+            <li class="category-tab-btn category-tab-active">
+              <span>10 - </span>Dresses
+            </li>
+            <li class="category-tab-btn"><span>04 - </span>Tops</li>
+            <li class="category-tab-btn"><span>12 - </span>Trousers</li>
+            <li class="category-tab-btn"><span>14 - </span>Skirts</li>
+            <li class="category-tab-btn"><span>18 - </span>Shoes</li>
+            <li class="category-tab-btn"><span>21 - </span>Accessories</li>
+          </ul>
+        </div>
+
+        <div class="category-content grid">
+          <!-- number 1 -->
+          <article class="category-card">
+            <img
+              src="assets/img/category-img-1.jpg"
+              alt=""
+              class="category-img"
+            />
+
+            <div class="category-data">
+              <ul class="product-stars">
+                <li><i class="ri-star-fill"></i></li>
+                <li><i class="ri-star-fill"></i></li>
+                <li><i class="ri-star-fill"></i></li>
+                <li><i class="ri-star-fill"></i></li>
+                <li><i class="ri-star-fill"></i></li>
+                <li><i class="ri-star-fill"></i></li>
+
+                <li class="product-rating"></li>
+              </ul>
+
+              <h3 class="category-title">
+                <a href="details.html">SilkMuse Wrap new Skirt</a>
+              </h3>
+
+              <span class="category-price">$145.00</span>
+
+              <a href="details.html" class="category-btn"
+                ><i class="ri-shopping-cart-line"></i
+              ></a>
+            </div>
+          </article>
+
+          <!-- number 2 -->
+          <article class="category-card">
+            <img
+              src="assets/img/category-img-2.jpg"
+              alt=""
+              class="category-img"
+            />
+
+            <div class="category-data">
+              <ul class="product-stars">
+                <li><i class="ri-star-fill"></i></li>
+                <li><i class="ri-star-fill"></i></li>
+                <li><i class="ri-star-fill"></i></li>
+                <li><i class="ri-star-fill"></i></li>
+                <li><i class="ri-star-fill"></i></li>
+                <li><i class="ri-star-fill"></i></li>
+
+                <li class="product-rating"></li>
+              </ul>
+
+              <h3 class="category-title">
+                <a href="details.html">Light Blue Baggy Jeans</a>
+              </h3>
+
+              <span class="category-price">$145.00</span>
+
+              <a href="details.html" class="category-btn"
+                ><i class="ri-shopping-cart-line"></i
+              ></a>
+            </div>
+          </article>
+
+          <!-- number 3 -->
+          <article class="category-card">
+            <img
+              src="assets/img/category-img-3.jpg"
+              alt=""
+              class="category-img"
+            />
+
+            <div class="category-data">
+              <ul class="product-stars">
+                <li><i class="ri-star-fill"></i></li>
+                <li><i class="ri-star-fill"></i></li>
+                <li><i class="ri-star-fill"></i></li>
+                <li><i class="ri-star-fill"></i></li>
+                <li><i class="ri-star-fill"></i></li>
+                <li><i class="ri-star-fill"></i></li>
+
+                <li class="product-rating"></li>
+              </ul>
+
+              <h3 class="category-title">
+                <a href="details.html">BoldShade Sunglasses</a>
+              </h3>
+
+              <span class="category-price">$145.00</span>
+
+              <a href="details.html" class="category-btn"
+                ><i class="ri-shopping-cart-line"></i
+              ></a>
+            </div>
+          </article>
+
+          <!-- number 4 -->
+          <article class="category-card">
+            <img
+              src="assets/img/category-img-4.jpg"
+              alt=""
+              class="category-img"
+            />
+
+            <div class="category-data">
+              <ul class="product-stars">
+                <li><i class="ri-star-fill"></i></li>
+                <li><i class="ri-star-fill"></i></li>
+                <li><i class="ri-star-fill"></i></li>
+                <li><i class="ri-star-fill"></i></li>
+                <li><i class="ri-star-fill"></i></li>
+                <li><i class="ri-star-fill"></i></li>
+
+                <li class="product-rating"></li>
+              </ul>
+
+              <h3 class="category-title">
+                <a href="details.html">CloudFit Relaxed Joggers</a>
+              </h3>
+
+              <span class="category-price">$145.00</span>
+
+              <a href="details.html" class="category-btn"
+                ><i class="ri-shopping-cart-line"></i
+              ></a>
+            </div>
+          </article>
+
+          <!-- number 5 -->
+          <article class="category-card">
+            <img
+              src="assets/img/category-img-5.jpg"
+              alt=""
+              class="category-img"
+            />
+
+            <div class="category-data">
+              <ul class="product-stars">
+                <li><i class="ri-star-fill"></i></li>
+                <li><i class="ri-star-fill"></i></li>
+                <li><i class="ri-star-fill"></i></li>
+                <li><i class="ri-star-fill"></i></li>
+                <li><i class="ri-star-fill"></i></li>
+                <li><i class="ri-star-fill"></i></li>
+
+                <li class="product-rating"></li>
+              </ul>
+
+              <h3 class="category-title">
+                <a href="details.html">AuraTone Shoulder Blue Jacket</a>
+              </h3>
+
+              <span class="category-price">$145.00</span>
+
+              <a href="details.html" class="category-btn"
+                ><i class="ri-shopping-cart-line"></i
+              ></a>
+            </div>
+          </article>
+
+          <!-- number 6 -->
+          <article class="category-card">
+            <img
+              src="assets/img/category-img-6.jpg"
+              alt=""
+              class="category-img"
+            />
+
+            <div class="category-data">
+              <ul class="product-stars">
+                <li><i class="ri-star-fill"></i></li>
+                <li><i class="ri-star-fill"></i></li>
+                <li><i class="ri-star-fill"></i></li>
+                <li><i class="ri-star-fill"></i></li>
+                <li><i class="ri-star-fill"></i></li>
+                <li><i class="ri-star-fill"></i></li>
+
+                <li class="product-rating"></li>
+              </ul>
+
+              <h3 class="category-title">
+                <a href="details.html">MudMuse Pleasted Blazer</a>
+              </h3>
+
+              <span class="category-price">$145.00</span>
+
+              <a href="details.html" class="category-btn"
+                ><i class="ri-shopping-cart-line"></i
+              ></a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!--=============== NEWSLETTER ===============-->
+      <section class="newsletter" id="newsletter">
+        <div class="newsletter-container container grid">
+          <div class="newsletter-group">
+            <h2 class="section-title" data-title="Subscribe Newsletter">
+              <span>Enjoy 15% off*</span> <br />
+              your first order when you sign up
+            </h2>
+
+            <form action="" class="newsletter-form">
+              <input
+                type="text"
+                placeholder="Email Address.."
+                class="newsletter-input"
+              />
+
+              <button type="submit" class="newsletter-btn">
+                <i class="ri-arrow-right-line"></i>
+              </button>
+            </form>
+
+            <p>*New subscribers only. Discount excludes selected lines.</p>
+          </div>
+
+          <div class="newsletter-image grid">
+            <div class="flex">
+              <div class="newsletter-box">
+                <img
+                  src="assets/img/subscribe-img-1.jpg"
+                  alt=""
+                  class="newsletter-img"
+                />
+              </div>
+
+              <div class="newsletter-box">
+                <img
+                  src="assets/img/subscribe-img-2.jpg"
+                  alt=""
+                  class="newsletter-img"
+                />
+              </div>
+            </div>
+
+            <div class="newsletter-box">
+              <img
+                src="assets/img/subscribe-img-3.jpg"
+                alt=""
+                class="newsletter-img"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer">
+      <div class="footer-container container grid section">
+        <div>
+          <a href="index.html">
+            <img src="assets/img/footer-logo.png" alt="" class="footer-logo" />
+          </a>
+
+          <div class="footer-socials">
+            <a href="https://www.facebook.com/" class="footer-socials-link">
+              <i class="ri-facebook-circle-fill"></i>
+            </a>
+
+            <a href="https://twitter.com/" class="footer-socials-link">
+              <i class="ri-twitter-fill"></i>
+            </a>
+
+            <a href="https://www.instagram.com/" class="footer-socials-link">
+              <i class="ri-instagram-line"></i>
+            </a>
+
+            <a href="https://www.youtube.com/" class="footer-socials-link">
+              <i class="ri-youtube-fill"></i>
+            </a>
+          </div>
+        </div>
+        <!-- contact -->
+        <div>
+          <h3 class="footer-title">Contact</h3>
+
+          <ul class="footer-contact grid">
+            <!-- No1 -->
+            <li class="footer-item">
+              <img src="assets/img/phone.svg" alt="" class="footer-icon" />
+
+              <a href="tel:" class="footer-link">+98-911-316-9936</a>
+            </li>
+
+            <!-- No2 -->
+            <li class="footer-item">
+              <img src="assets/img/envelope.svg" alt="" class="footer-icon" />
+
+              <a href="mail" class="footer-link">amirrezabbss@gmail.com</a>
+            </li>
+
+            <!-- No3 -->
+            <li class="footer-item">
+              <img src="assets/img/map.svg" alt="" class="footer-icon" />
+
+              <a class="footer-link">IRI M. Babol, Bandpay</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- links -->
+        <div>
+          <h3 class="footer-title">Links</h3>
+
+          <ul class="footer-contact grid">
+            <li>
+              <a href="#" class="footer-link">Our Product</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Testimonials</a>
+            </li>
+
+            <li><a href="#" class="footer-link">Expert Team</a></li>
+
+            <li>
+              <a href="#" class="footer-link">Product Details</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">help & Advice</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- about -->
+        <div>
+          <h3 class="footer-title">About</h3>
+
+          <ul class="footer-contact grid">
+            <li>
+              <a href="#" class="footer-link">About Us</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Perks</a>
+            </li>
+
+            <li><a href="#" class="footer-link">Careers</a></li>
+
+            <li>
+              <a href="#" class="footer-link">Trading</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Blog</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- terms -->
+        <div>
+          <h3 class="footer-title">Terms</h3>
+
+          <ul class="footer-contact grid">
+            <li>
+              <a href="#" class="footer-link">Privacy Policy</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Terms & Conditions</a>
+            </li>
+
+            <li><a href="#" class="footer-link">About Cookies</a></li>
+
+            <li>
+              <a href="#" class="footer-link">Terms of Use</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Brands Terms</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-group container">
+        <span class="footer-copy">COPYRIGHT © 2025 EliteCard.</span>
+
+        <img
+          src="assets/img/payment-method.png"
+          alt=""
+          class="footer-payment"
+        />
+      </div>
+    </footer>
+
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scrollup">
+      <i class="ri-arrow-up-long-line scrollup-icon"></i>
+    </a>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!--=============== NICE SELECT JS ===============-->
+    <script src="assets/js/nice-select2.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+
+    <!--=============== Home JS ===============-->
+    <script src="assets/js/home.js"></script>
+  </body>
+</html>

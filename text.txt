@@ -1,0 +1,86 @@
+========== HEADER ==========
+.topbar-social-link
+https://www.facebook.com/
+https://twitter.com/
+https://www.instagram.com/
+https://www.instagram.com/
+
+.navbar-select
+All Categories
+Fashion
+Electronics
+Jewelry
+Grocery
+
+.navbar-input
+Search...
+
+
+========== HOME ==========
+.home-tag
+Top Trending
+
+.home-title
+Classic Elegant Style Women
+
+.home-description
+Discover timeless elegance and modern sophistication with our curated collection of women's fashion.
+
+.button
+Shop Now
+
+
+========== PRODUCTS ==========
+.product-btn
+Add to Cart
+
+.product-title | .product-price | .product-tag
+VelvetBloom Midi Dress
+$145.00
+Sale
+
+Short Denim jacket
+$145.00
+New
+
+CloudFit Joggers
+$125.00
+
+CloudFit Joggers
+$125.00
+
+
+========== CHECKOUT ==========
+.country-select
+Select Country
+United States
+Canada
+United Kingdom
+Australia
+India
+
+.checkout-input
+First Name
+Last Name
+Address
+Apartment, suite, etc
+Zip Code
+
+.city-select
+Select City
+New York City
+Los Angeles
+Chicago
+Houston
+Phoenix
+
+.state-select
+State
+New Jersey
+New Mexico
+New York
+North Carolina
+North Dakota
+
+
+
