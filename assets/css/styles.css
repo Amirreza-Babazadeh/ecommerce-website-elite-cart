@@ -1,8 +1,8 @@
-/*=============== GOOGLE FONTS ===============*/
+/* GOOGLE FONTS */
 @import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@100..900&family=Instrument+Sans&display=swap");
-/*=============== VARIABLES CSS ===============*/
+/* VARIABLES CSS */
 :root {
-  /*========== Colors ==========*/
+  /* Colors */
   --hue: 13;
   --first-color: hsl(var(--hue), 90%, 45%);
   --title-color: hsl(var(--hue), 4%, 12%);
@@ -14,10 +14,10 @@
   --white-color: hsl(var(--hue), 4%, 100%);
   --gray-color: hsl(var(--hue), 4%, 85%);
 
-  /*========== Font family ==========*/
+  /* Font family */
   --body-font: "Azeret Mono", monospace;
   --second-font: "Instrument Sans", sans-serif;
-  /*========== Font sizes ==========*/
+  /* Font sizes */
   --big-font-size: 4rem;
   --h1-font-size: 3rem;
   --h2-font-size: 2.5rem;
@@ -29,7 +29,7 @@
   --normal-font-size: 1rem;
   --small-font-size: 0.875rem;
 
-  /*========== Font weight ==========*/
+  /* Font weight */
   --weight-500: 500;
   --weight-600: 600;
   --weight-700: 700;
@@ -38,7 +38,7 @@
 
 /* Responsive typography */
 
-/*=============== BASE ===============*/
+/* BASE */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -93,7 +93,7 @@ img {
   display: block;
   max-width: 100%;
 }
-/*=============== REUSABLE CSS CLASSES ===============*/
+/* REUSABLE CSS CLASSES */
 .section {
   padding-block: 7.5rem;
 }
@@ -131,9 +131,9 @@ img {
   left: 50%;
   transform: translateX(-50%);
 }
-/*=============== SECTION TITLE ===============*/
+/* SECTION TITLE */
 
-/*=============== BUTTON ===============*/
+/* BUTTON */
 .btn {
   display: inline-flex;
   justify-content: center;
@@ -144,7 +144,7 @@ img {
   font-weight: var(--weight-700);
 }
 
-/*=============== LAYOUT ===============*/
+/* LAYOUT */
 .container {
   max-width: 1416px;
   margin-inline: auto;
@@ -156,12 +156,12 @@ img {
   gap: 1.5rem;
 }
 
-/*=============== HEADER ===============*/
+/* HEADER */
 .header {
   margin-bottom: 1rem;
 }
 
-/*========== TopBar ==========*/
+/* TopBar */
 .topbar {
   background-color: var(--first-color);
   padding-block: 0.5rem;
@@ -234,7 +234,7 @@ img {
   column-gap: 1rem;
 }
 
-/*========== Bottom bar ==========*/
+/* Bottom bar */
 .bottom-bar {
   padding-block: 1.25rem;
 }
@@ -305,7 +305,7 @@ img {
   color: var(--white-color);
 }
 
-/*========== Navbar ==========*/
+/* Navbar */
 
 .navbar {
   padding-block: 0.375rem;
@@ -340,7 +340,7 @@ img {
   column-gap: 1.25rem;
 }
 
-/*=============== HOME ===============*/
+/* HOME */
 .home-swiper .swiper-slide {
   padding-block: 10.5rem;
   background-size: cover;
@@ -386,7 +386,7 @@ img {
   width: 80px;
 }
 
-/*=============== PRODUCTS ===============*/
+/* PRODUCTS */
 .product-header {
   border: 1px solid var(--border-color);
   position: relative;
@@ -524,7 +524,7 @@ img {
   background-color: hsl(151, 87%, 36%);
   color: var(--white-color);
 }
-/* =========Categories ====== */
+/* ====Categories = */
 
 .categories-header {
   display: flex;
@@ -672,7 +672,7 @@ img {
   transform: translateY(0);
 }
 
-/*=============== FEATURES ===============*/
+/* FEATURES */
 .features {
   grid-template-columns: repeat(4, 1fr);
 }
@@ -688,7 +688,7 @@ img {
   margin-bottom: 0.625rem;
 }
 
-/*=============== PRODUCTS ===============*/
+/* PRODUCTS */
 .product-elevate {
   grid-template-columns: 4fr 7fr 1fr;
 }
@@ -776,7 +776,7 @@ img {
 .product-elevate .product-bottom {
   padding: 1rem;
 }
-/*=============== CATEGORY ===============*/
+/* CATEGORY */
 .category {
   grid-template-columns: 4fr 8fr;
   align-items: center;
@@ -882,7 +882,7 @@ img {
   background-color: var(--first-color);
   color: var(--white-color);
 }
-/*=============== NEWSLETTER ===============*/
+/* NEWSLETTER */
 .newsletter {
   background-color: var(--container-color);
   padding-bottom: 4.5rem;
@@ -947,7 +947,7 @@ img {
   transform: scale(1.1) rotate(3deg);
 }
 
-/*=============== FOOTER ===============*/
+/* FOOTER */
 .footer {
   background-color: var(--title-color);
 }
@@ -1027,7 +1027,7 @@ img {
   font-size: var(--small-font-size);
 }
 
-/*=============== SCROLL UP ===============*/
+/* SCROLL UP */
 .scrollup {
   position: fixed;
   right: 1.75rem;
@@ -1055,43 +1055,155 @@ img {
   visibility: visible;
 }
 
-/*=============== BANNER ===============*/
+/* BANNER */
+.banner {
+  background-image: url(../img/banner.jpg);
+  padding-block: 8rem 2.25rem;
+  text-align: center;
+}
 
-/*=============== SHOP ===============*/
+.banner-title {
+  font-size: var(--big-font-size);
+}
 
-/*========== Top ==========*/
+.banner-description {
+  letter-spacing: 2px;
+  margin-block: 0.625rem 2.5rem;
+}
 
-/*========== Filters ==========*/
+.banner-description,
+.breadcrumb-item {
+  color: var(--title-color);
+  text-transform: uppercase;
+}
 
-/*========== Products ==========*/
+.breadcrumb {
+  background-color: var(--white-color);
+  width: fit-content;
+  margin-inline: auto;
+  border-radius: 2rem;
+  padding: 0.5rem 6.75rem;
+  display: flex;
+}
 
-/*========== Pagination ==========*/
+.breadcrumb-item:not(:first-child)::before {
+  content: "/";
+  padding-right: 0.5rem;
+  color: var(--text-color);
+}
 
-/*=============== DETAILS ===============*/
+.breadcrumb-item:not(:first-child) {
+  padding-left: 0.5rem;
+}
 
-/*=============== DETAILS CONTENT ===============*/
+/* SHOP */
 
-/*=============== ACCOUNT ===============*/
+/* Top */
+.top-filter-bar,
+.top-filter-left,
+.top-filter-right,
+.filter-btn {
+  display: flex;
+  align-items: center;
+}
 
-/*=============== CART ===============*/
+.top-filter-bar {
+  justify-content: space-between;
+  margin-bottom: 3.75rem;
+}
 
-/*=============== CART BOTTOM ===============*/
+.top-filter-left,
+.top-filter-right {
+  column-gap: 1.25rem;
+}
 
-/*=============== WISHLIST ===============*/
+.filter-btn {
+  column-gap: 0.5rem;
+  background-color: var(--container-color);
+  color: var(--title-color);
+  padding: 1rem 2rem;
+  border: 1px solid var(--border-color);
+  border-radius: 2rem;
+  cursor: pointer;
+}
 
-/*=============== CHECKOUT ===============*/
+.filter-btn i {
+  font-size: var(--larger-font-size);
+}
 
-/*=============== RETURNS ===============*/
+.filter-results,
+.filter-subtitle {
+  font-size: var(--small-font-size);
+}
 
-/*=============== STEPS ===============*/
+.filter-results {
+  color: var(--title-color);
+  font-weight: var(--weight-600);
+}
 
-/*=============== ACCORDION ===============*/
+.filter-subtitle {
+  color: var(--title-color);
+  font-weight: var(--weight-700);
+}
 
-/*=============== CONTACT ===============*/
+.top-filter-right .nice-select {
+  width: 340px;
+  background-color: var(--white-color);
+}
 
-/*=============== ACCORDION ===============*/
+.view-btns {
+  display: flex;
+  column-gap: 0.5rem;
+}
 
-/*=============== BREAKPOINTS ===============*/
+.view-btn {
+  width: 48px;
+  aspect-ratio: 1/1;
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.active-view-btn {
+  background-color: var(--text-color);
+}
+
+.active-view-btn .view-icon {
+  filter: invert(1);
+}
+
+/* Filters */
+
+/* Products */
+
+/* Pagination */
+
+/* DETAILS */
+
+/* DETAILS CONTENT */
+
+/* ACCOUNT */
+
+/* CART */
+
+/* CART BOTTOM */
+
+/* WISHLIST */
+
+/* CHECKOUT */
+
+/* RETURNS */
+
+/* STEPS */
+
+/* ACCORDION */
+
+/* CONTACT */
+
+/* ACCORDION */
+
+/* BREAKPOINTS */
 /* For large devices */
 
 /* For medium devices */

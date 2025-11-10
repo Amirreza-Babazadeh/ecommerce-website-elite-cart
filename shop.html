@@ -13,28 +13,538 @@
     <!-- NICE SELECT CSS -->
     <link rel="stylesheet" href="assets/css/nice-select2.css" />
 
-    <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
 
     <title>Responsive Ecommerce Website</title>
   </head>
   <body>
-    <!--=============== HEADER ===============-->
+    <!-- HEADER -->
+    <header class="header">
+      <!-- Topbar -->
+      <div class="topbar">
+        <div class="topbar-container container">
+          <ul class="topbar-list">
+            <li class="topbar-item">
+              <a href="returns.html" class="topbar-link">Returns Policy</a>
+            </li>
 
-    <!--=============== MAIN ===============-->
+            <li class="topbar-item">
+              <a href="#newsletter" class="topbar-link">Newsletter</a>
+            </li>
 
-    <!--=============== BANNER ===============-->
+            <li class="topbar-item">
+              <a href="contact.html" class="topbar-link">Contact</a>
+            </li>
+          </ul>
 
-    <!--=============== SHOP ===============-->
+          <div class="topbar-socials">
+            <a href="https://www.facebook.com/" class="topbar-socials-link">
+              <i class="ri-facebook-circle-fill"></i>
+            </a>
 
-    <!--=============== NEWSLETTER ===============-->
+            <a href="https://twitter.com/" class="topbar-socials-link">
+              <i class="ri-twitter-fill"></i>
+            </a>
 
-    <!--=============== FOOTER ===============-->
+            <a href="https://www.instagram.com/" class="topbar-socials-link">
+              <i class="ri-instagram-line"></i>
+            </a>
 
-    <!--=============== SCROLL UP ===============-->
+            <a href="https://www.youtube.com/" class="topbar-socials-link">
+              <i class="ri-youtube-fill"></i>
+            </a>
+          </div>
 
-    <!--=============== NICE SELECT JS ===============-->
+          <div class="topbar-shipping">
+            <img src="assets/img/truck.svg" alt="" class="topbar-icon" />
+            <p class="topbar-text">FREE SHIPPING FOR ALL ORDERS OF $150</p>
+          </div>
+        </div>
+      </div>
 
-    <!--=============== MAIN JS ===============-->
+      <!-- Bottom bar -->
+      <div class="bottom-bar container">
+        <a href="index.html">
+          <img src="assets/img/logo.png" alt="" class="navbar-logo" />
+        </a>
+
+        <form action="" class="navbar-form">
+          <select
+            name=""
+            class="navbar-select"
+            style="display: none"
+            id="navbar-select"
+          >
+            <option value="all" selected>All Categories</option>
+            <option value="fas">Fashion</option>
+            <option value="ele">Electronics</option>
+            <option value="jew">Jewelry</option>
+            <option value="gro">Grocery</option>
+          </select>
+
+          <input type="text" class="navbar-input" placeholder="Search..." />
+
+          <button type="submit" class="navbar-search">
+            <i class="ri-search-line"></i>
+          </button>
+        </form>
+
+        <div class="navbar-btns">
+          <a href="account.html" class="navbar-btn"
+            ><i class="ri-user-line"></i
+          ></a>
+
+          <a href="#" class="navbar-btn">
+            <i class="ri-heart-line"></i>
+          </a>
+
+          <a href="#" class="navbar-btn">
+            <i class="ri-shopping-cart-line"></i>
+          </a>
+        </div>
+      </div>
+      <!-- navbar -->
+      <nav class="navbar container">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a href="index.html" class="navbar-link">HOME</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="shop.html" class="navbar-link">SHOP</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="account.html" class="navbar-link">MY ACCOUNT</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="contact.html" class="navbar-link">CONTACT</a>
+          </li>
+        </ul>
+
+        <div class="navbar-contact">
+          <img src="assets/img/call.svg" alt="" class="navbar-icon" />
+          <a href="tel:+98-911-316-9936 " class="navbar-call-link"
+            >+98-911-316-9936</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main class="main">
+      <!-- BANNER -->
+      <section class="banner">
+        <div class="container">
+          <h1 class="banner-title">Our Products</h1>
+          <p class="banner-description">Everything You Need To Knew</p>
+
+          <ul class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="index.html">Home</a>
+            </li>
+
+            <li class="breadcrumb-item">Our Products</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- SHOP -->
+      <section class="shop container section">
+        <div class="top-filter-bar">
+          <div class="top-filter-left">
+            <div class="filter-btn" id="filter-btn">
+              <i class="ri-filter-fill"></i> Filter
+            </div>
+            <span class="filter-results">34 results</span>
+          </div>
+
+          <div class="top-filter-right">
+            <span class="filter-subtitle">Sort by:</span>
+
+            <div>
+              <select
+                name=""
+                class="shop-select"
+                style="display: none"
+                id="shop-select"
+              >
+                <option value="all" selected>All Categories</option>
+                <option value="fas">Fashion</option>
+                <option value="ele">Electronics</option>
+                <option value="jew">Jewelry</option>
+                <option value="gro">Grocery</option>
+              </select>
+            </div>
+
+            <span class="filter-subtitle">View as:</span>
+
+            <div class="view-btns">
+              <div class="view-btn active-view-btn">
+                <img src="assets/img/grid.svg" alt="" class="view-icon" />
+              </div>
+
+              <div class="view-btn">
+                <img src="assets/img/list.svg" alt="" class="view-icon" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="shop-filters container grid" id="shop-filters">
+          <div class="filter-item">
+            <h3 class="filter-title">Availability</h3>
+
+            <div class="filter-data">
+              <input type="checkbox" class="filter-checkbox" id="in-stock" />
+              <label for="in-stock" class="filter-text">In Stock</label>
+              <span>14</span>
+            </div>
+
+            <div class="filter-data">
+              <input type="checkbox" class="filter-checkbox" id="out-stock" />
+              <label for="out-stock" class="filter-text">Out Stock</label>
+              <span>06</span>
+            </div>
+          </div>
+
+          <div class="filter-item">
+            <h3 class="filter-title">Price</h3>
+
+            <div>
+              <p>Highest price is $409.00</p>
+              <input type="range" class="filter-range" />
+            </div>
+          </div>
+
+          <div class="filter-item">
+            <h3 class="filter-title">Color</h3>
+
+            <div class="filter-data">
+              <div
+                class="filter-color"
+                style="--first-color: hsl(0, 0%, 0%)"
+              ></div>
+              <span class="filter-text">Black</span>
+              <span>14</span>
+            </div>
+
+            <div class="filter-data">
+              <div
+                class="filter-color"
+                style="--first-color: hsl(34, 96%, 67%)"
+              ></div>
+              <span class="filter-text">Brown</span>
+              <span>06</span>
+            </div>
+
+            <div class="filter-data">
+              <div
+                class="filter-color"
+                style="--first-color: hsl(49, 97%, 87%)"
+              ></div>
+              <span class="filter-text">Light Beige</span>
+              <span>14</span>
+            </div>
+
+            <div class="filter-data">
+              <div
+                class="filter-color"
+                style="--first-color: hsl(0, 0%, 88%)"
+              ></div>
+              <span class="filter-text">Gray</span>
+              <span>18</span>
+            </div>
+
+            <div class="filter-data">
+              <div
+                class="filter-color"
+                style="--first-color: hsl(35, 57%, 42%)"
+              ></div>
+              <span class="filter-text">Chocolate</span>
+              <span>23</span>
+            </div>
+
+            <div class="filter-data">
+              <div
+                class="filter-color"
+                style="--first-color: hsl(0, 100%, 68%)"
+              ></div>
+              <span class="filter-text">Red</span>
+              <span>48</span>
+            </div>
+
+            <div class="filter-data">
+              <div
+                class="filter-color"
+                style="--first-color: hsl(249, 100%, 79%)"
+              ></div>
+              <span class="filter-text">Blue</span>
+              <span>41</span>
+            </div>
+          </div>
+
+          <div class="filter-item">
+            <h3 class="filter-title">Range</h3>
+
+            <div class="filter-data">
+              <div class="filter-color"></div>
+              <span class="filter-text">Tops & Tees</span>
+              <span>14</span>
+            </div>
+
+            <div class="filter-data">
+              <div class="filter-color"></div>
+              <span class="filter-text">Dresses & Jumpsuits</span>
+              <span>06</span>
+            </div>
+
+            <div class="filter-data">
+              <div class="filter-color"></div>
+              <span class="filter-text">Bottoms</span>
+              <span>14</span>
+            </div>
+
+            <div class="filter-data">
+              <div class="filter-color"></div>
+              <span class="filter-text">Outerwear & Jackets</span>
+              <span>18</span>
+            </div>
+
+            <div class="filter-data">
+              <div class="filter-color"></div>
+              <span class="filter-text">Workwear</span>
+              <span>23</span>
+            </div>
+
+            <div class="filter-data">
+              <div class="filter-color"></div>
+              <span class="filter-text">co-ord Sets</span>
+              <span>48</span>
+            </div>
+
+            <div class="filter-data">
+              <div class="filter-color"></div>
+              <span class="filter-text">Loungewear</span>
+              <span>41</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- NEWSLETTER -->
+      <section class="newsletter" id="newsletter">
+        <div class="newsletter-container container grid">
+          <div class="newsletter-group">
+            <h2 class="section-title" data-title="Subscribe Newsletter">
+              <span>Enjoy 15% off*</span> <br />
+              your first order when you sign up
+            </h2>
+
+            <form action="" class="newsletter-form">
+              <input
+                type="text"
+                placeholder="Email Address.."
+                class="newsletter-input"
+              />
+
+              <button type="submit" class="newsletter-btn">
+                <i class="ri-arrow-right-line"></i>
+              </button>
+            </form>
+
+            <p>*New subscribers only. Discount excludes selected lines.</p>
+          </div>
+
+          <div class="newsletter-image grid">
+            <div class="flex">
+              <div class="newsletter-box">
+                <img
+                  src="assets/img/subscribe-img-1.jpg"
+                  alt=""
+                  class="newsletter-img"
+                />
+              </div>
+
+              <div class="newsletter-box">
+                <img
+                  src="assets/img/subscribe-img-2.jpg"
+                  alt=""
+                  class="newsletter-img"
+                />
+              </div>
+            </div>
+
+            <div class="newsletter-box">
+              <img
+                src="assets/img/subscribe-img-3.jpg"
+                alt=""
+                class="newsletter-img"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-container container grid section">
+        <div>
+          <a href="index.html">
+            <img src="assets/img/footer-logo.png" alt="" class="footer-logo" />
+          </a>
+
+          <div class="footer-socials">
+            <a href="https://www.facebook.com/" class="footer-socials-link">
+              <i class="ri-facebook-circle-fill"></i>
+            </a>
+
+            <a href="https://twitter.com/" class="footer-socials-link">
+              <i class="ri-twitter-fill"></i>
+            </a>
+
+            <a href="https://www.instagram.com/" class="footer-socials-link">
+              <i class="ri-instagram-line"></i>
+            </a>
+
+            <a href="https://www.youtube.com/" class="footer-socials-link">
+              <i class="ri-youtube-fill"></i>
+            </a>
+          </div>
+        </div>
+        <!-- contact -->
+        <div>
+          <h3 class="footer-title">Contact</h3>
+
+          <ul class="footer-contact grid">
+            <!-- No1 -->
+            <li class="footer-item">
+              <img src="assets/img/phone.svg" alt="" class="footer-icon" />
+
+              <a href="tel:" class="footer-link">+98-911-316-9936</a>
+            </li>
+
+            <!-- No2 -->
+            <li class="footer-item">
+              <img src="assets/img/envelope.svg" alt="" class="footer-icon" />
+
+              <a href="mail" class="footer-link">amirrezabbss@gmail.com</a>
+            </li>
+
+            <!-- No3 -->
+            <li class="footer-item">
+              <img src="assets/img/map.svg" alt="" class="footer-icon" />
+
+              <a class="footer-link">IRI M. Babol, Bandpay</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- links -->
+        <div>
+          <h3 class="footer-title">Links</h3>
+
+          <ul class="footer-contact grid">
+            <li>
+              <a href="#" class="footer-link">Our Product</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Testimonials</a>
+            </li>
+
+            <li><a href="#" class="footer-link">Expert Team</a></li>
+
+            <li>
+              <a href="#" class="footer-link">Product Details</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">help & Advice</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- about -->
+        <div>
+          <h3 class="footer-title">About</h3>
+
+          <ul class="footer-contact grid">
+            <li>
+              <a href="#" class="footer-link">About Us</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Perks</a>
+            </li>
+
+            <li><a href="#" class="footer-link">Careers</a></li>
+
+            <li>
+              <a href="#" class="footer-link">Trading</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Blog</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- terms -->
+        <div>
+          <h3 class="footer-title">Terms</h3>
+
+          <ul class="footer-contact grid">
+            <li>
+              <a href="#" class="footer-link">Privacy Policy</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Terms & Conditions</a>
+            </li>
+
+            <li><a href="#" class="footer-link">About Cookies</a></li>
+
+            <li>
+              <a href="#" class="footer-link">Terms of Use</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Brands Terms</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-group container">
+        <span class="footer-copy">COPYRIGHT © 2025 EliteCard.</span>
+
+        <img
+          src="assets/img/payment-method.png"
+          alt=""
+          class="footer-payment"
+        />
+      </div>
+    </footer>
+
+    <!-- SCROLL UP -->
+    <a href="#" class="scrollup" id="scrollup">
+      <i class="ri-arrow-up-long-line scrollup-icon"></i>
+    </a>
+
+    <!-- NICE SELECT JS -->
+    <script src="assets/js/nice-select2.js"></script>
+
+    <!-- MAIN JS -->
+    <script src="assets/js/main.js"></script>
+
+    <script>
+      NiceSelect.bind(document.getElementById("shop-select"), {
+        searchable: false,
+      })
+    </script>
   </body>
 </html>
