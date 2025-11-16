@@ -191,6 +191,10 @@ img {
   padding-inline: 1.25rem;
 }
 
+.container-grid {
+  display: grid;
+}
+
 .grid {
   display: grid;
   gap: 1.5rem;
@@ -1709,7 +1713,41 @@ img {
 }
 
 .login {
-  width: 90rem;
+  width: 80%;
+  margin-inline: auto;
+}
+
+.account-title,
+.account-description {
+  text-align: center;
+}
+
+.account-title {
+  font-size: var(--h2-font-size);
+  margin-bottom: 1rem;
+}
+
+.account-description {
+  margin-bottom: 2.25rem;
+}
+
+.forgot-password {
+  color: var(--title-color);
+  font-weight: var(--weight-500);
+}
+
+.account-btn {
+  margin-top: 1rem;
+}
+
+.register-form {
+  background-color: var(--container-color);
+  padding: 3.75rem;
+  border-radius: 2rem;
+}
+
+.register-form .input {
+  background-color: var(--white-color);
 }
 
 /* CART */
@@ -1727,6 +1765,107 @@ img {
 /* ACCORDION */
 
 /* CONTACT */
+.contact-container {
+  grid-template-columns: 8fr 4fr;
+}
+
+.contact-data {
+  display: flex;
+  align-items: center;
+  column-gap: 1.75rem;
+  margin-bottom: 3.25rem;
+}
+
+.contact-title {
+  font-size: var(--h1-font-size);
+  font-weight: var(--weight-600);
+  margin-bottom: 0.5rem;
+}
+
+.contact-description {
+  color: var(--title-color);
+  font-family: var(--second-font);
+  font-size: var(--large-font-size);
+}
+
+.contact-area {
+  height: 160px;
+  resize: none;
+  padding-block: 1.5rem;
+}
+
+.contact-checkbox {
+  margin-top: 0.25rem;
+}
+
+.contact-btn {
+  justify-self: flex-start;
+}
+
+.contact-content {
+  background-color: var(--title-color);
+  padding: 3rem;
+  border-radius: 2rem;
+}
+
+.contact-subtitle,
+.contact-info-title,
+.contact-timing b {
+  color: var(--white-color);
+}
+
+.contact-subtitle {
+  font-size: var(--h3-font-size);
+  margin-bottom: 2.5rem;
+}
+
+.contact-info {
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid var(--text-color);
+}
+
+.contact-info:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.cantact-info-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+.contact-info-title {
+  text-transform: uppercase;
+  font-weight: var(--weight-500);
+}
+
+.contact-timing {
+  display: block;
+  color: var(--text-color-light);
+}
+
+.contact-email-link,
+.contact-item,
+.contact-item a,
+.location-description {
+  color: var(--text-color-light);
+  font-weight: var(--weight-500);
+}
+
+.contact-timing:not(:last-child) {
+  margin-bottom: 0.775rem;
+}
+
+.contact-list,
+.contact-mails {
+  row-gap: 0.5rem;
+}
+
+.contact-mail-link,
+.contact-item a {
+  transition: color 0.4s ease;
+}
 
 /* ACCORDION */
 
