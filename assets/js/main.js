@@ -38,3 +38,12 @@ btn.onclick = function () {
     alert("Ok!")
   }
 }
+
+const scrolldown = document.getElementById("scrolldown")
+
+scrolldown.onclick = function () {
+  window.scrollTo({
+    top: 6000, 
+    behavior: "smooth",
+  })
+}
