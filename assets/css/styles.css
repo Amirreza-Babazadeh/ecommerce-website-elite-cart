@@ -1828,7 +1828,7 @@ img {
   margin-bottom: 2rem;
 }
 
-.cantact-info-header {
+.contact-info-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1845,7 +1845,7 @@ img {
   color: var(--text-color-light);
 }
 
-.contact-email-link,
+.contact-mail-link,
 .contact-item,
 .contact-item a,
 .location-description {
@@ -1854,7 +1854,7 @@ img {
 }
 
 .contact-timing:not(:last-child) {
-  margin-bottom: 0.775rem;
+  margin-bottom: 0.75rem;
 }
 
 .contact-list,
@@ -1865,6 +1865,15 @@ img {
 .contact-mail-link,
 .contact-item a {
   transition: color 0.4s ease;
+}
+
+.contact-mail-link:hover,
+.contact-item a:hover {
+  color: var(--first-color);
+}
+
+.contact-item a {
+  margin-left: 1rem;
 }
 
 /* ACCORDION */
