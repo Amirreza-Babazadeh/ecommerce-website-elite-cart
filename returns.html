@@ -16,11 +16,12 @@
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/styles.css" />
 
-    <title>Responsive Ecommerce Website</title>
+    <title>My Responsive Website</title>
   </head>
   <body>
     <!-- HEADER -->
     <header class="header">
+      <!-- Topbar -->
       <div class="topbar">
         <div class="topbar-container container">
           <ul class="topbar-list">
@@ -102,9 +103,25 @@
             <i class="ri-shopping-cart-line"></i>
           </a>
         </div>
+
+        <div class="nav-toggle" id="nav-toggle">
+          <i class="ri-menu-line"></i>
+        </div>
       </div>
       <!-- navbar -->
-      <nav class="navbar container">
+      <nav class="navbar container" id="nav-menu">
+        <a href="index.html" class="mobile-logo">
+          <img src="assets/img/logo.png" alt="" />
+        </a>
+
+        <form action="" class="navbar-form mobile-form">
+          <input type="text" placeholder="Search..." class="navbar-input" />
+
+          <button class="navbar-search" type="submit">
+            <i class="ri-search-line"></i>
+          </button>
+        </form>
+
         <ul class="navbar-list">
           <li class="navbar-item">
             <a href="index.html" class="navbar-link">HOME</a>
@@ -123,11 +140,29 @@
           </li>
         </ul>
 
-        <div class="navbar-contact">
-          <img src="assets/img/call.svg" alt="" class="navbar-icon" />
-          <a href="tel:+98-911-316-9936 " class="navbar-call-link"
-            >+98-911-316-9936</a
-          >
+        <div class="navbar-contacts">
+          <div class="navbar-contact">
+            <img src="assets/img/call.svg" alt="" class="navbar-icon" />
+            <a href="tel:+98-911-316-9936 " class="navbar-call-link"
+              >+98-911-316-9936</a
+            >
+          </div>
+
+          <div class="navbar-contact">
+            <img src="assets/img/message.svg" alt="" class="navbar-icon" />
+            <a href="mailto:amirrezabbss@gmail.com" class="navbar-call-link"
+              >amirrezabbss@gmail.com</a
+            >
+          </div>
+
+          <div class="navbar-contact">
+            <img src="assets/img/map.svg" alt="" class="navbar-icon" />
+            <p class="navbar-address">IRI M. Babol, Bandpay</p>
+          </div>
+        </div>
+
+        <div class="nav-close" id="nav-close">
+          <i class="ri-close-circle-fill"></i>
         </div>
       </nav>
     </header>
@@ -454,7 +489,7 @@
           </div>
         </div>
         <!-- contact -->
-        <div>
+        <div class="footer-contact-div">
           <h3 class="footer-title">Contact</h3>
 
           <ul class="footer-contact grid">

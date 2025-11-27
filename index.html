@@ -19,7 +19,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/styles.css" />
 
-    <title>Responsive Ecommerce Website</title>
+    <title>My Responsive Website</title>
   </head>
   <body>
     <!-- HEADER -->
@@ -66,7 +66,7 @@
         </div>
       </div>
 
-      <!-- search box -->
+      <!-- Bottom bar -->
       <div class="bottom-bar container">
         <a href="index.html">
           <img src="assets/img/logo.png" alt="" class="navbar-logo" />
@@ -106,9 +106,25 @@
             <i class="ri-shopping-cart-line"></i>
           </a>
         </div>
+
+        <div class="nav-toggle" id="nav-toggle">
+          <i class="ri-menu-line"></i>
+        </div>
       </div>
       <!-- navbar -->
-      <nav class="navbar container">
+      <nav class="navbar container" id="nav-menu">
+        <a href="index.html" class="mobile-logo">
+          <img src="assets/img/logo.png" alt="" />
+        </a>
+
+        <form action="" class="navbar-form mobile-form">
+          <input type="text" placeholder="Search..." class="navbar-input" />
+
+          <button class="navbar-search" type="submit">
+            <i class="ri-search-line"></i>
+          </button>
+        </form>
+
         <ul class="navbar-list">
           <li class="navbar-item">
             <a href="index.html" class="navbar-link">HOME</a>
@@ -122,16 +138,42 @@
             <a href="account.html" class="navbar-link">MY ACCOUNT</a>
           </li>
 
+          <li class="navbar-item mobile-item">
+            <a href="wishlist.html" class="navbar-link">MY WISHLIST</a>
+          </li>
+
+          <li class="navbar-item mobile-item">
+            <a href="cart.html" class="navbar-link">MY CART</a>
+          </li>
+
           <li class="navbar-item">
             <a href="contact.html" class="navbar-link">CONTACT</a>
           </li>
         </ul>
 
-        <div class="navbar-contact">
-          <img src="assets/img/call.svg" alt="" class="navbar-icon" />
-          <a href="tel:+98-911-316-9936 " class="navbar-call-link"
-            >+98-911-316-9936</a
-          >
+        <div class="navbar-contacts">
+          <div class="navbar-contact">
+            <img src="assets/img/call.svg" alt="" class="navbar-icon" />
+            <a href="tel:+98-911-316-9936 " class="navbar-call-link"
+              >+98-911-316-9936</a
+            >
+          </div>
+
+          <div class="navbar-contact">
+            <img src="assets/img/message.svg" alt="" class="navbar-icon" />
+            <a href="mailto:amirrezabbss@gmail.com" class="navbar-call-link"
+              >amirrezabbss@gmail.com</a
+            >
+          </div>
+
+          <div class="navbar-contact">
+            <img src="assets/img/map.svg" alt="" class="navbar-icon" />
+            <p class="navbar-address">IRI M. Babol, Bandpay</p>
+          </div>
+        </div>
+
+        <div class="nav-close" id="nav-close">
+          <i class="ri-close-circle-fill"></i>
         </div>
       </nav>
     </header>
@@ -145,7 +187,11 @@
             <!-- slide 1 -->
             <div
               class="swiper-slide"
-              style="background-image: url(./assets/img/home-img-1.jpg)"
+              style="
+                background: url(./assets/img/home-img-1.jpg);
+                background-size: cover;
+                background-position: center center;
+              "
             >
               <div class="container">
                 <div class="home-tag">
@@ -167,7 +213,11 @@
             <!-- slide 2 -->
             <div
               class="swiper-slide"
-              style="background-image: url(./assets/img/home-img-2.jpg)"
+              style="
+                background-image: url(./assets/img/home-img-2.jpg);
+                background-size: cover;
+                background-position: center center;
+              "
             >
               <div class="container">
                 <div class="home-tag">
@@ -945,12 +995,13 @@
           >
         </div>
 
-        <div class="categories-container">
-          <div class="categories-item hero">
+        <div class="categories-container grid">
+          <div class="categories-item">
             <img
               src="assets/img/categories-img-1.jpg"
               alt=""
               class="categories-img"
+              style="position: absolute"
             />
             <div class="categories-data">
               <h3 class="categories-title">ALL PRODUCTS</h3>
@@ -958,7 +1009,10 @@
                 Discover endless possibilities with our All Products
               </p>
 
-              <div class="categories-list mt-auto">
+              <div
+                class="categories-list grid mt-auto"
+                style="padding-top: 17rem"
+              >
                 <a href="shop.html" class="categories-link"
                   >New Arrivals <i class="ri-arrow-right-line"></i
                 ></a>
@@ -972,43 +1026,53 @@
             </div>
           </div>
 
-          <div class="categories-item top-right">
-            <img
-              src="assets/img/categories-img-2.jpg"
-              alt=""
-              class="categories-img"
-            />
-            <div class="categories-data">
-              <h3 class="categories-title">WOMEN SHIRTS</h3>
-              <p class="categories-description">
-                Discover endless possibilities with our All Products
-              </p>
-              <a href="shop.html" class="categories-icon mt-auto"
-                ><i class="ri-arrow-right-line"></i
-              ></a>
-            </div>
-          </div>
+          <div class="categories-items grid">
+            <div class="categories-item">
+              <img
+                src="assets/img/categories-img-2.jpg"
+                alt=""
+                class="categories-img"
+                style="position: absolute"
+              />
+              <div class="categories-data">
+                <h3 class="categories-title">Women Shirts</h3>
 
-          <div class="right-bottom">
-            <div class="categories-item small">
+                <p class="categories-description">
+                  Discover endless possibilities with our All Products
+                </p>
+
+                <a
+                  href="shop.html"
+                  class="categories-icon mt-auto"
+                  style="margin-top: 3rem"
+                  ><i class="ri-arrow-right-line"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="categories-item">
               <img
                 src="assets/img/categories-img-3.jpg"
                 alt=""
                 class="categories-img"
               />
-              <div class="categories-data">
-                <a href="shop.html" class="categories-btn">Woman Pants</a>
+              <div class="categories-data" style="position: absolute; inset: 0">
+                <a href="shop.html" class="categories-btn mt-auto"
+                  >Woman Pants</a
+                >
               </div>
             </div>
 
-            <div class="categories-item small">
+            <div class="categories-item">
               <img
                 src="assets/img/categories-img-4.jpg"
                 alt=""
                 class="categories-img"
               />
-              <div class="categories-data">
-                <a href="shop.html" class="categories-btn">Accessor</a>
+              <div class="categories-data" style="position: absolute; inset: 0">
+                <a href="shop.html" class="categories-btn mt-auto"
+                  >Accessories</a
+                >
               </div>
             </div>
           </div>
@@ -1714,8 +1778,9 @@
             </a>
           </div>
         </div>
+
         <!-- contact -->
-        <div>
+        <div class="footer-contact-div">
           <h3 class="footer-title">Contact</h3>
 
           <ul class="footer-contact grid">
